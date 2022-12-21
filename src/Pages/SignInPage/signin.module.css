@@ -1,0 +1,278 @@
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    /*========== Font and typography ==========*/
+    --body-font: "Poppins", sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.25rem = 20px, 1.5rem = 24px... */
+    --big-font-size: 1.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --hero-paragraph: 1.3125rem;
+
+    /*========== Font weight ==========*/
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*========== Logo Size ==========*/
+    --logo-width: 6.881rem;
+    --logo-height: 3.34rem;
+    --form-logo-width: 7.2rem;
+    --form-logo-height: 5rem;
+    --footer-logo-width: 4rem;
+    --footer-logo-height: 5rem;
+
+
+    /*========== Header Padding ==========*/
+    --header-pt: 0.75rem;
+    --header-pb: 0.75rem;
+
+
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    --primary-hue-color: 240;
+    --secondary-hue-color: 0;
+    /* HSL Color Mode */
+    --text-color-white: hsl(var(--secondary-hue-color), 0%, 100%);
+    --text-color-purple: hsl(var(--primary-hue-color), 100%, 25%);
+    --text-color-black: #000000;
+    --body-first-color: hsl(var(--secondary-hue-color), 0%, 100%);
+    --body-second-color: hsl(var(--primary-hue-color), 100%, 25%);
+
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+body {
+    font-family: var(--body-font);
+
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/*==================== MAIN CONTENT STYLING ====================*/
+main {
+    padding: 7rem 0;
+    margin-top: 5rem;
+}
+
+
+
+/*==================== FORMS ====================*/
+/* Utility classes */
+.formWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: hsl(var(--secondary-hue-color), 0%, 100%);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.formHeading {
+    color: var(--text-color-purple);
+    font-weight: var(--font-semi-bold);
+    line-height: 1.6;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.formHeading span {
+    font-size: .9rem;
+}
+
+.submitBtn {
+    width: 95%;
+    background-color: hsl(var(--primary-hue-color), 100%, 25%);
+    color: var(--text-color-white);
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: .5rem auto;
+    font-size: .9rem;
+    font-weight: var(--font-semi-bold);
+}
+
+.formWrapperSignin .formLeft {
+    width: 45%;
+}
+
+.formLeft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.formWrapperSignin .formLeftText {
+    transform: translateY(-4rem);
+    text-align: center;
+    color: var(--text-color-purple);
+    font-size: 1.3rem;
+    font-weight: var(--font-semi-bold);
+}
+
+.signinForm .formGroup {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: .3rem auto 1rem auto;
+    z-index: -1;
+}
+
+.signinForm .formGroup label {
+    color: var(--text-color-purple);
+}
+
+.signinForm .formGroup input {
+    width: 100%;
+    padding: 1.2rem 0.7rem;
+    height: 2.2rem;
+    margin-top: .3rem;
+    border-radius: 5px;
+    border: 1px solid #f1f3f5;
+    background-color: #f1f3f5;
+    color: var(--text-color-purple);
+    position: relative;
+}
+
+.formGroup input:hover {
+    outline: hsl(var(--primary-hue-color), 100%, 25%);
+}
+
+.toggleBtn1 {
+    position: absolute;
+    left: 79%;
+    transform: translateY(98%);
+  }
+
+/*==================== SIGNIN FORM ====================*/
+.formWrapperSignin {
+    width: 75%;
+}
+
+.signinFormContainer {
+    width: 55%;
+    padding: 2rem .5rem;
+    /* z-index: 9; */
+}
+
+.btnDividerText {
+    text-align: center;
+    color: hsl(240, 100%, 25%);
+    border-bottom: 1px solid #000080;
+    line-height: 0.1;
+    width: 89%;
+    margin-top: 1rem;
+    margin-left: 5%;
+}
+
+.btnDividerText span {
+    background: #fff;
+    padding-inline: 0.5rem;
+}
+
+.googleSigninBtn {
+    /* margin-top: 2.5rem; */
+    padding: 8px 15px !important;
+    background-color: white;
+    border: 2px solid #000080;
+    color: #000080;
+    width: 100%;
+    outline: none;
+    /* padding: 10px 15px; */
+    border-radius: 5px;
+    margin: 1rem auto .5rem auto;
+    font-size: .9rem;
+    font-weight: var(--font-semi-bold);
+}
+
+.googleSvg {
+    padding-right: .5rem;
+    transform: translateY(0.2rem);
+}
+
+.formGroup .googleSvg {
+    margin-right: 0.3rem;
+    transform: translateY(18%);
+}
+
+.submitBtn{
+    width: 100%;
+}
+
+
+.signupRedirect {
+    display: flex;
+    justify-content: center;
+}
+
+.formGroup .label {
+    color: var(--text-color-purple);
+    font-weight: 600;
+  }
+  
+.errorText {
+    color: red;
+    margin-left: 1rem;
+  }
+  
+
+
+/*==================== MEDIA QUERIES ====================*/
+
+/* For Tablets (min-width: 750px) and  */
+@media (max-width: 1024px) {
+    .toggleBtn1 {
+        left: 76%;
+        
+      }
+}
+
+@media (max-width: 740px) {
+    .toggleBtn1 {
+        left: 77%;
+      }
+    
+}
+
+
+@media (max-width: 550px) {
+    .formLeft img {
+        display: none;
+    }
+
+    .formWrapperSignin {
+        padding: 0;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .signinFormContainer {
+        width: 100%;
+    }
+
+    .formGroup {
+        width: 100%;
+    }
+}

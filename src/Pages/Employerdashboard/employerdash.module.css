@@ -1,0 +1,108 @@
+.Employerdash {
+   display: flex;
+}
+
+/* Modified by Abraham */
+.employerdashboard {
+   width: 100%;
+   border-radius: .5rem;
+
+   text-align: center;
+   padding: 1rem;
+   margin: 2rem;
+   height: fit-content;
+}
+
+
+
+.employercardbox {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 1rem;
+   margin-bottom: 2.5rem;
+}
+
+.contentboxes {
+   position: relative;
+   height: 150px;
+   box-shadow: 0 0 15px #c4c4c480;
+   padding: 1.5rem;
+   border-radius: 8px;
+   background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.plusicon {
+   position: absolute;
+   top: 10%;
+   right: 10%;
+   color: #000080;
+}
+
+.title {
+   color: #000080;
+}
+
+.leavecounter {
+   border-radius: 4px;
+   padding: 0.5rem 1rem;
+   font-weight: 600;
+   color: #000000;
+   background-color: var(--light-blue);
+   width: 100%;
+   margin-top: 0.5rem;
+}
+
+.leavecount {
+   /* background-color: #edf0ff; */
+   width: fit-content;
+   margin: 0 auto;
+   padding: 0 0.5rem;
+   border-radius: 4px;
+}
+
+.table {
+   display: flex;
+}
+
+.employertable {
+   margin-bottom: 2.5rem;
+}
+
+.employertablesection {
+   width: 100%;
+   box-shadow: 0 0 15px #c4c4c480;
+   padding: 1rem;
+   border-radius: 10px;
+
+}
+
+.leavesapplied {
+   margin-bottom: 15px;
+   margin-top: 15px;
+   text-align: left;
+   text-transform: capitalize;
+   font-size: 1.6rem;
+}
+
+.loadBtn {
+   color: var(--white);
+   background-color: var(--primary-blue);
+   border: 2px solid var(--primary-blue);
+   font-size: 1rem;
+   line-height: 1.5rem;
+   font-weight: 600;
+   padding: 0.5rem .5rem;
+   outline: none;
+   border-radius: 50px;
+   letter-spacing: 1px;
+   cursor: pointer;
+   margin-top: 2rem;
+}
+
+.loadBtn:hover {
+   opacity: 0.85;
+}

@@ -1,0 +1,162 @@
+.close {
+  float: right;
+  margin: 0 20px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.rolespopform {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+.inputTitle {
+  margin-bottom: 0.5rem;
+  color: #000080;
+  font-weight: 600;
+}
+
+.popupContainer{
+  background-color: white;
+  z-index: 5;
+  width: 45vw;
+  position: absolute;
+  margin-left: 25%;
+  margin-right: 12%;
+  margin-top: 5%;
+  top: 3vh;
+  height: 72vh;
+  padding: 2rem;
+  max-height: calc(100vh - 50px);
+  overflow-y: auto;
+}
+.popupTitle{
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+.formgroup input{
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  outline: none;
+  background-color: #f1f3f5;
+  color: var(--primary-blue);
+  padding: .5rem .5rem;
+  margin-bottom: .8rem;
+} 
+
+
+.formgroup textarea {
+  height: 8rem;
+  width: 100%;
+  resize: none;
+  padding: .5rem .5rem;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  outline: none;
+  background-color: #f1f3f5;
+  color: var(--primary-blue);
+}
+
+.roleTable {
+  margin-top: .5rem;
+  box-shadow: none;
+}
+
+.roleTable td {
+  font: 2rem;
+}
+
+.tbodyrow {
+  height: .8rem;
+}
+
+
+thead tr {
+  height: 1rem;
+  font-size: 0.75rem;
+  line-height: 0;
+}
+
+
+tbody tr {
+  font-size: .75rem;
+  line-height: 0;
+}
+
+tr:hover,
+td:hover {
+  height: fit-content;
+  background-color: none;
+}
+
+input[type=checkbox] {
+  margin: 0;
+  height: fit-content;
+}
+
+.mid {
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+/* container styling */
+.addnewrolecontainer {
+  background-color: white;
+  width: 45vw;
+  padding: 1rem;
+  scroll-behavior: smooth;
+  position: absolute;
+  top: 10vh;
+  margin-left: 26%;
+  margin-right: 6%;
+  z-index: 3;
+  /* border-radius: 1rem; */
+  height: 72vh;
+  max-height: calc(100vh - 50px);
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+
+/* Added by Abraham */
+.submitButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  border: 2px solid var(--primary-blue);
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 3px 25px;
+}
+
+.secondaryBtn {
+  color: var(--primary-blue);
+}
+.primaryBtn {
+  color: white;
+  background: var(--primary-blue);
+}
+.secondaryBtn:hover {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+.primaryBtn:hover {
+  background-color: #c2e2f5;
+  color: var(--primary-blue);
+}
+
+.errorMessage{
+  color: red;
+}

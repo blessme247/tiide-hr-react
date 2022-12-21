@@ -1,0 +1,39 @@
+.subcontainertopbar {
+    height: 50px;
+    width: 100%;
+    background-color: #3552af;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+}
+
+.h4{
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+
+.itemdisplay{
+    border-bottom: 1px solid var(--light-grey);
+    margin-bottom: 10px;
+    padding: 5px;
+    /* display: flex; 
+    justify-content: space-between;
+    align-items: center; */
+    cursor: pointer;
+}
+
+.text{
+    font-size: 16px;
+}
+/* 
+.subsubcontainer{
+    height: 48%;
+    
+} */

@@ -1,0 +1,113 @@
+.about {
+  padding: 0 1.5rem;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  
+}
+
+.brief {
+  padding: 3rem 0;
+  display: grid;
+  gap: 1rem;
+  margin: 5rem auto;
+}
+
+.brief h2 {
+  width: fit-content;
+  text-align: left;
+}
+
+.brief p {
+  line-height: 1.5;
+}
+
+.container .brief .blue-text {
+  color: var(--primary-blue);
+  
+}
+
+
+/* brief-card */
+.brief-card {
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.brief-container {
+  padding: 0 .5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.brief-card h4 {
+  margin: 1rem auto;
+  line-height: 1.5;
+}
+
+.brief-card p {
+  line-height: 1.5;
+}
+
+/* .brief-card p {
+  font-weight: 600;
+} */
+
+.brief-card:nth-child(odd) {
+  background-color: #ecf3ff99;
+}
+
+.brief-card:nth-child(even) {
+  background-color: #f7dff599;
+}
+
+.swiperSectionHead {
+  color: #000080;
+  text-align: center;
+}
+
+#memberCardSwiper {
+  margin: 5rem auto;
+  margin-bottom: 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  /* background-color: var(--very-light-grey); */
+  background-color: #fafafde6;
+  /* width: 10%; */
+  height: fit-content;
+}
+
+
+@media (min-width: 768px) {
+  .brief {
+    margin: 10rem auto;
+  }
+}
+
+
+@media (min-width: 1024px) {
+
+  .brief {
+    /* margin: 10rem auto;
+    width: 90%; */
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brief-container {
+    /* padding: 0 7rem; */
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+}

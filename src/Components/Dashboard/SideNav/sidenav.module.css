@@ -1,0 +1,120 @@
+.closesidebar {
+  height: 100vh;
+  background-color: white;
+  padding-top: 1rem;
+  z-index: 9;
+  margin-right: 1rem;
+  width: fit-content;
+  transition: 300ms linear all;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 1px -1px 5px -1px var(--light-grey);
+}
+
+.arrowContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: .25rem .5rem;
+  transition: 300ms linear all;
+}
+
+.arrowContainerRot {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: .25rem .5rem;
+  transition: 300ms linear all;
+}
+
+.togglenavbtn {
+  color: #000080;
+  /* width: fit; */
+  font-size: 1.3rem;
+  transition: 300ms linear all;
+  cursor: pointer;
+}
+
+.togglenavbtnrotate {
+  color: #000080;
+  /* width: fit; */
+  /* margin: 1rem; */
+  font-size: 1.3rem;
+  transform: rotate(180deg);
+  transition: 300ms linear all;
+  cursor: pointer;
+}
+
+.opensidenavdiv {
+  display: none;
+  transition: 300ms linear all;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    height: 100%;
+    position: fixed;
+    padding-top: 5rem;
+    width: 100%;
+    z-index: 5;
+    background-color: #FEFEFCf0;
+    transition: 300ms linear all;
+  }
+
+  .closesidebar {
+    height: 100vh;
+    position: fixed;
+    padding-top: 5rem;
+    width: 100%;
+    left: -100%;
+    z-index: 5;
+    transition: 300ms linear all;
+    background-color: #FEFEFCf0;
+  }
+
+  .togglenavbtn {
+    display: none;
+    transition: 300ms linear all;
+  }
+
+  .closesidenavbtn {
+    display: block;
+    float: right;
+    margin: 1rem;
+    font-size: xx-large;
+    transition: 300ms linear all;
+  }
+
+  .opensidenavdiv {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: .7rem;
+    right: 2rem;
+    z-index: 50;
+    transition: 300ms linear all;
+  }
+
+  .opensidenavbtn {
+    font-size: xx-large;
+    display: block;
+    float: right;
+    transition: 300ms linear all;
+  }
+}
+
+
+@media screen and (max-width: 414px) {
+  .opensidenavbtn {
+    font-size: x-large;
+    transition: 300ms linear all;
+  }
+
+}

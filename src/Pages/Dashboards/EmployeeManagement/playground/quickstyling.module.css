@@ -1,0 +1,77 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1212120f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.popup {
+  position: absolute;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+
+.close {
+  float: right;
+  margin: 0 20px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.rolespopform {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.formgroup {
+  display: grid;
+}
+
+.formgroup textarea {
+  height: 8rem;
+  width: 100%;
+  resize: none;
+  border: 1px solid var(--light-grey);
+  border-radius: 1rem;
+  outline: none;
+}
+
+.roleTable {
+  margin-top: .5rem;
+}
+
+.roleTable td {
+  font: 2rem;
+}
+
+.tbodyrow {
+  height: .8rem;
+}
+
+
+thead tr {
+  height: 1rem;
+  font-size: 0.75rem;
+  line-height: 0;
+}
+
+
+tbody tr {
+  font-size: .75rem;
+  line-height: 0;
+}
+
+tr:hover,
+td:hover {
+  height: fit-content;
+  background-color: none;
+}
+
+input[type=checkbox] {
+  margin: 0;
+  height: fit-content;
+}

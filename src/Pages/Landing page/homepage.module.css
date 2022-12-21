@@ -1,0 +1,453 @@
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.25rem = 20px, 1.5rem = 24px... */
+  --big-font-size: 1.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 1rem;
+  --hero-paragraph: 1.2125rem;
+  --hero-smallparagraph: 1rem;
+
+  /*========== Font weight ==========*/
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== Logo Size ==========*/
+  --logo-width: 6.881rem;
+  --logo-height: 3.34rem;
+  --form-logo-width: 7.2rem;
+  --form-logo-height: 5rem;
+  --footer-logo-width: 4rem;
+  --footer-logo-height: 5rem;
+
+  /*========== Header Padding ==========*/
+  --header-pt: 0.75rem;
+  --header-pb: 0.75rem;
+
+  /*========== Colors ==========*/
+  /* Change favorite color */
+  --primary-hue-color: 240;
+  --secondary-hue-color: 0;
+  /* HSL Color Mode */
+  --text-color-white: hsl(var(--secondary-hue-color), 0%, 100%);
+  --text-color-purple: hsl(var(--primary-hue-color), 100%, 25%);
+  --text-color-black: #000000;
+  --body-first-color: hsl(var(--secondary-hue-color), 0%, 100%);
+  --body-second-color: hsl(var(--primary-hue-color), 100%, 25%);
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--body-font);
+}
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*==================== HERO SECTION ====================*/
+.heroSection {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  margin-top: 5rem;
+}
+.heroTextWrapper {
+  color: var(--text-color-purple);
+  width: 40%;
+}
+
+.heroTextWrapper h2 {
+  font-size: 2.725rem;
+  line-height: 1.1;
+}
+.heroTextWrapper p {
+  font-size: var(--hero-paragraph);
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--text-color-purple);
+}
+
+.swiperWrapper {
+  width: 90%;
+}
+.slideImageWrapper {
+  z-index: 999;
+}
+.slideImageWrapper {
+  position: relative;
+}
+.slideImageWrapper1 img {
+  object-fit: cover;
+}
+.slideImageWrapper img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+/* Hide custom swiper navigation arrows on desktop */
+.left-arrow,
+.right-arrow {
+  display: none;
+}
+.swiper {
+  width: 42%;
+  height: 300px;
+}
+
+.heroTextWrapper .callToAction {
+  outline: none;
+  border: 2px solid var(--body-second-color);
+  color: var(--body-second-color);
+  background: transparent;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--font-bold);
+}
+
+/*==================== FEATURES SECTION ====================*/
+.featuresSection {
+  /* background-color: #fafafa; */
+  background-color: #fafafde6;
+  padding: 2rem 0;
+}
+
+.sectionHead {
+  text-align: center;
+  color: #000080;
+  font-size: var(--h1-font-size);
+  padding: 2rem 0;
+  font-weight: var(--font-semi-bold);
+}
+.features {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.featuresWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+.feature {
+  display: flex;
+  justify-content: space-between;
+  width: 47%;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  margin: 0.7rem auto;
+  font-size: 18px;
+}
+.feature1,
+.feature5 {
+  background-color: rgba(236, 243, 255, 0.6);
+}
+.feature2,
+.feature6 {
+  background-color: rgba(247, 223, 245, 0.6);
+}
+.feature3 {
+  background-color: rgba(250, 241, 225, 0.6);
+}
+.feature4 {
+  background: rgba(220, 245, 222, 0.6);
+  align-content: center;
+}
+.feature img {
+  align-self: flex-start;
+}
+.feature p {
+  margin-left: 1rem;
+  line-height: 1.5;
+  font-weight: var(--font-medium);
+}
+
+/*==================== SERVICES SECTION ====================*/
+.servicesSection {
+  background-color: #fff;
+  padding: 2rem 0 4rem 0;
+}
+.servicesSectionHeading {
+  text-align: center;
+  color: var(--text-color-purple);
+  font-size: var(--h1-font-size);
+  text-transform: uppercase;
+}
+.servicesWrapper .service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.serviceImageWrapper,
+ .serviceText {
+  width: 30%;
+}
+.serviceImageWrapper img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.topService .serviceText {
+  width: 30%;
+  background-color: #fafafde6;
+  padding: 1rem 2rem;
+  text-align: center;
+  height: 270px;
+}
+.serviceTextImage {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  width: 50px;
+}
+.serviceTextImage img {
+  width: 100%;
+}
+.serviceText .serviceTextSummary {
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: var(--font-semi-bold);
+  line-height: 1.2;
+}
+.serviceText p {
+  line-height: 1.5;
+}
+
+/*==================== CALL TO ACTION SECTION ====================*/
+.bottomCta {
+  background-color: #fafafde6;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-bottom: 5rem ;
+ 
+}
+.bottomCtaContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  align-items: center;
+}
+.bottomCtaContent .paragraph {
+  font-size: var(--h2-font-size);
+  color: var(--text-color-purple);
+  line-height: 1.3;
+  width: 70%;
+}
+.bottomCtaButton {
+  background-color: #000080;
+  color: var(--text-color-white);
+  font-size: var(--normal-font-size);
+  width: 20%;
+  padding: 0.8rem 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+/*==================== MEDIA QUERIES ====================*/
+@media (max-width: 1000px) {
+
+  /*==================== HERO SECTION ====================*/
+  .heroTextWrapper h2 {
+    font-size: 2rem;
+  }
+
+  .heroTextWrapper p {
+    font-size: var(--hero-smallparagraph);
+  }
+
+  /* Hero Section  */
+  .hero-section, .hero-wrapper {
+    max-width: 100%;
+  }
+  .hero-text-wrapper h2 {
+    font-size: 1.8rem;
+  }
+  .hero-text-wrapper p {
+    font-size: 1rem;
+  }
+  .swiper {
+    align-self: center;
+    width: 48%;
+  }
+  .feature p {
+    line-height: 1.3;
+  }
+
+  /*==================== SERVICES SECTION ====================*/
+  .service__image-wrapper,
+  .service__text {
+    width: 40%;
+  }
+  .services__wrapper .service {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .topService .serviceImageWrapper,
+  .topService .serviceText {
+    width: 46%;
+    gap: 10%;
+  }
+
+  .service .service3 {
+    /* order: 3; */
+    order: 5;
+  }
+  .service .service4 {
+    order: 5;
+  }
+
+  .service .service6 {
+    order: 4;
+  }
+
+  .mbMediumScreen {
+    margin-bottom: 0.5rem;
+  }
+
+  /*==================== BOTTOM CTA SECTION ====================*/
+  .bottomCtaContent {
+    padding: 2rem 4rem;
+  }
+  .bottomCtaContent .paragraph {
+    font-size: var(--h3-font-size);
+  }
+  .bottomCtaButton {
+    width: 25%;
+  }
+}
+
+@media (max-width: 670px) {
+  p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .heroSection {
+    flex-direction: column;
+    height: auto;
+    margin-top: 7rem;
+    align-items: flex-start;
+  }
+  .heroTextWrapper {
+    width: 100%;
+  }
+  .heroImageContainer {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  /* Display custom swiper navigation arrows on mobile
+.left-arrow,
+.right-arrow {
+  display: block;
+}
+Hide default swiper navigation arrows on mobile
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: "" !important;
+}
+.left-arrow {
+  margin-top: 30vh;
+  margin-left: 120vw ;
+}
+.right-arrow {
+  margin-top: 30vh;
+}
+.slide__image-wrapper img {
+  margin-bottom: 5rem;
+}
+  .call-to-action {
+    padding: 10px 30px;
+  } */
+
+  .feature {
+    width: 100%;
+  }
+
+  .section__head {
+    font-size: 1.1rem;
+  }
+
+  .topService .serviceImageWrapper,
+  .topService .serviceText {
+    width: 100%;
+    gap: 0;
+  }
+
+  .mbMediumScreen {
+    margin-bottom: 1rem;
+  }
+
+  .bottomCta {
+    margin-bottom: 0;
+  }
+
+  .bottomCtaContent {
+    flex-direction: column;
+    padding: 0.3rem;
+    background-color: #eee;
+  }
+  
+  .bottomCtaContent .paragraph {
+    width: 90%;
+    font-size: 1rem;
+    /* line-height: 1.1; */
+    padding: 1rem 0.5rem;
+    background-color: #fff;
+    height: 6.2rem;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .bottomCtaButton {
+    width: 88%;
+    margin-top: 2.5rem;
+    position: absolute;
+  }
+  /* Break out bottom call to action fromits container */
+  .fullWidth {
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    padding: 2rem 0;
+  }
+ 
+}
+
+@media (max-width: 491px) {
+  .bottomCtaContent .paragraph {
+    height: 7.4rem;
+  }
+  .bottomCtaButton {
+    margin-top: 4rem;
+  }
+}

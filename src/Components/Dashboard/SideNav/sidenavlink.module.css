@@ -1,0 +1,31 @@
+.label {
+  width: fit-content;
+  transition: 300ms linear all;
+  margin: .5rem 1rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: .8rem;
+  font-weight: 500;
+  padding: 5px;
+  color: var(--primary-blue);
+}
+
+.label p {
+  color: var(--primary-blue);
+}
+
+i {
+  margin-right: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .label {
+    font-size: 1.5rem;
+  }
+
+  .label p {
+    font-size: 1.5rem;
+  }
+}

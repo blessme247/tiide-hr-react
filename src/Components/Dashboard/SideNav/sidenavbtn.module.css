@@ -1,0 +1,29 @@
+.butn {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: .75rem;
+  margin-right: 1rem;
+  color: #000080;
+  background-color: #fff;
+  transition: 300ms linear ease-in-out;
+}
+
+.butn:hover {
+  background-color: #c4c4c4;
+}
+
+.icons {
+  margin: 0 .5rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: .75rem;
+}
+
+.titlenone {
+  display: none;
+}

@@ -1,0 +1,49 @@
+
+
+/* Styles for user Profile */
+
+  
+  .profileDetailsContainer h4 {
+      margin: 2rem 0 1rem 0;
+      text-align: left;
+  }
+  
+  .pageIntro {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .profileDetailsHeader {
+    border: 1px solid #c4c4c4;
+    border-bottom: 1px #d9d9d9 solid;
+    background-color: #d9d9d9;
+    text-align: left ;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 1px,
+      #fff 1px,
+      #fff 5px,
+      transparent 5px,
+      transparent 6px,
+      #fff 6px,
+      #fff 10px
+    );
+    background-size: 7px 7px;
+    /* padding: .8rem .5rem; */
+  }
+  
+  .title {
+    width: 30%;
+    padding-left: 0.8rem;
+    /* background-color: #f2f2f2; */
+  }
+  
+  .profileDetails {
+    width: 70%;
+    /* border-left: 1px solid #c4c4c4; */
+  }
+  

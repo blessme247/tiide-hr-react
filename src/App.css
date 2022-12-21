@@ -1,0 +1,258 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* color variable */
+:root {
+  /* shades of white */
+  --white: #ffffff;
+  --off-white: #fefefc;
+
+  /* shades of Gray */
+  --very-light-grey: #f5f5f5;
+  --light-grey: #c4c4c4;
+
+  /* shades of Blue */
+  --primary-blue: #000080;
+  --light-blue: #edfaff;
+
+  /* Danger */
+  --danger: #ff0000;
+
+  /* Success */
+  --green: #2bd71c;
+
+  /* Black */
+  --black: #000000;
+}
+
+.App {
+  background-color: var(--off-white);
+  /* background-color: #fafafde6; */
+}
+
+h1 {
+  /* 48px */
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h2 {
+  /* 36px */
+  font-size: 2.25rem;
+  /* 40px */
+  line-height: 2.5rem;
+}
+
+h3 {
+  /* 30px */
+  font-size: 1.875rem;
+  /* 36px */
+  line-height: 2.25rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  /* 24px */
+  line-height: 2rem;
+  /* 32px */
+}
+
+h5,
+thead {
+  font-size: 1.125rem;
+  /* 18px */
+  line-height: 1.75rem;
+  /* 28px */
+}
+
+h6,
+tr {
+  /* 12px */
+  font-size: 0.75rem;
+  /* 16px */
+  line-height: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  /* 16px */
+  line-height: 1.5rem;
+  /* 24px */
+  padding: 1px;
+}
+
+a {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* buttons */
+.primary-button {
+  color: var(--white);
+  background-color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+  /* 16px */
+  font-size: 0.95rem;
+  /* 24px */
+  line-height: 1.5rem;
+  font-weight: 600;
+  /* margin: auto .5rem; */
+  padding: 0.2rem 1rem;
+  outline: none;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #c2e2f5;
+  color: #000080;
+}
+
+.secondary-button {
+  background-color: var(--off-white);
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+  /* 16px */
+  font-size: 0.95rem;
+  /* 24px */
+  line-height: 1.5rem;
+  font-weight: 600;
+  /* margin: auto .5rem; */
+  padding: 0.5rem 2rem;
+  outline: none;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  color: var(--primary-blue);
+  filter: brightness(0.4);
+}
+
+/* Media Query */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  h5,
+  thead {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  tr {
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* buttons */
+  .primary-button,
+  .secondary-button {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 670px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  h4 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  h5,
+  thead {
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+  }
+
+  tr {
+    font-size: 0.4rem;
+    line-height: 0.5rem;
+  }
+
+  p {
+    font-size: 0.65rem;
+    line-height: 0.8rem;
+  }
+
+  a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  /* buttons */
+  .primary-button,
+  .secondary-button {
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+[data-testid] {
+  fill: #000080 !important;
+}

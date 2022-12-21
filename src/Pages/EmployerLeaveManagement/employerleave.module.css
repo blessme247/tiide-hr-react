@@ -1,0 +1,175 @@
+.mainContent {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: .5rem;
+  box-shadow: 0 0 15px #c4c4c4;
+  padding: 1rem;
+  margin: 2rem ;
+  height: fit-content;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.leaveText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 4vh; */
+}
+
+.xlargeTextBold {
+  font-size: 1.6rem;
+  color: #000080;
+  font-weight: 700;
+}
+
+.tableLabels {
+  display: flex;    
+  width: 50%;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.label {
+  color: #000080;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.active {
+  border-bottom: 2px solid #000080;
+  font-weight: 600;
+}
+
+.linkToLeaveApplication {
+  text-decoration: none;
+  color: #000080;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.table {
+  border-radius: 8px;
+  margin-top: 2rem;
+  /* width: 100%; */
+  /* min-width: 600px; */
+  margin-right: 0.5rem;
+  /* border-collapse: collapse; */
+  /* border-spacing: 0; */
+  
+}
+
+.thead {
+  font-size: large;
+  font-weight: 600;
+  height: 3rem;
+}
+
+.tr {
+  word-wrap: break-word;
+  height: 4rem;
+  height: max-content;
+  /* width: 100%; */
+}
+
+.tr:hover {
+  background-color: var(--light-grey);
+}
+
+.thead {
+  background-color: var(--light-blue);
+  text-align: left;
+  border-bottom: none;
+}
+
+
+.th,
+.td {
+  padding: 1rem;
+  border-radius: 5px;
+  
+}
+
+.td {
+  /* border-bottom: 2px solid var(--very-light-grey); */
+  text-align: left;
+}
+
+.edit {
+  color: green;
+  font-size: 1rem;
+  margin: 0 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+.edit:hover {
+  transform: scale(1.5);
+}
+
+.delete {
+  color: red;
+  font-size: 1rem;
+  margin: 0 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+.delete:hover {
+  transform: scale(1.5);
+}
+
+.mainContainer {
+  display: flex;
+}
+
+.createBtnContainer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 7rem;
+  right: 3rem;
+}
+
+.createButton {
+  border: 2px solid #000080;
+  background-color: #000080;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.createButton:hover {
+  background-color: #c2e2f5;
+  color: #000080;
+}
+
+.actionBtnGroup {
+  display: flex;
+  justify-content: space-between;
+}
+.approveBtn, .declineBtn {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.approveBtn {
+  color: green;
+}
+.declineBtn {
+  color: red;
+}
+
+.approveBtn:hover, .declineBtn:hover {
+  transform: scale(1.1);
+}
+

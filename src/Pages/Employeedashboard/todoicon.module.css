@@ -1,0 +1,16 @@
+.todoicons{
+    /* border: 2px solid red; */
+   width: fit-content;
+}
+
+.icons{
+    font-size: .8rem;
+    margin: 0.3rem;
+    /* text-align: center; */
+}
+.todostyling{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+}

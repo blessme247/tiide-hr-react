@@ -1,0 +1,37 @@
+.employeedashboardcontent {
+  width: 100%;
+  display: flex;
+}
+
+.employeesectioncontainer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  background-color: var(--very-light-grey);
+}
+
+.employeesectionsubcontainer {
+  display: grid;
+  gap: 1rem;
+}
+.subcontainertopbar {
+  height: 50px;
+  background-color: #3552af;
+  margin-bottom: 15px;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  /* border-radius: 15px 15px 0px 0px; */
+  overflow: hidden;
+}
+
+.subsubcontainer {
+  background-color: white;
+  border-radius: 15px 15px 0px 0px;
+}
+.subsubcontainerbody {
+  padding: 0.5rem 1rem;
+}

@@ -1,0 +1,6 @@
+in order to implement the edit mode we need
+
+an action that will trigger the pop up form that we will edit from
+we will need an edit mode that will bring up the blur background as well and handle the close event
+we will have to pass the obj and use the object id to handle identify which item we are editing.
+do we need redux for edit mode?

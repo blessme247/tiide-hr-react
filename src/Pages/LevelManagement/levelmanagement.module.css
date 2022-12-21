@@ -1,0 +1,159 @@
+.leaveText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: -1rem;
+}
+
+.xlargeTextBold {
+  font-size: 32px;
+  color: #000080;
+  font-weight: 700;
+}
+
+.table {
+  border-radius: 8px;
+  margin-top: 2rem;
+  height: 5rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+/* .table {
+  border-radius: 8px;
+  margin-top: 2rem;
+  min-width: 800px;
+  margin-right: 2rem;
+  border-collapse: collapse;
+  
+} */
+
+.thead {
+  font-size: large;
+  font-weight: 600;
+  height: 3rem;
+}
+
+.tr:hover {
+  background-color: var(--light-grey);
+}
+
+.thead {
+  background-color: var(--light-blue);
+  text-align: left;
+}
+
+.th {
+  width: 10%;
+}
+
+.th,
+.td {
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.td {
+  border-bottom: 2px solid var(--very-light-grey);
+  text-align: left;
+  cursor: default;
+}
+
+.edit {
+  color: green;
+  font-size: 1rem;
+  margin: 0 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+.edit:hover {
+  transform: scale(1.5);
+}
+
+.delete {
+  color: red;
+  font-size: 1rem;
+  margin: 0 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+.delete:hover {
+  transform: scale(1.5);
+}
+
+.mainContainer {
+  display: flex;
+  z-index: -2;
+  /* justify-content: space-between; */
+
+}
+
+
+
+.mainContent {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: .5rem;
+  box-shadow: 0 0 15px #c4c4c4;
+  padding: 1rem;
+  margin: 2rem;
+  height: fit-content;
+  /* my added stylin */
+  /* position: relative; */
+}
+
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000c4;
+  width: 100%;
+  height: 100vh;
+}
+
+.employeeMgtDashboard {
+  /* background-color: var(--very-light-grey); */
+  width: 100%;
+  margin: 0 1rem;
+  position: relative;
+}
+
+.createBtnContainer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 7rem;
+  right: 3rem;
+}
+
+.createButton {
+  color: var(--white);
+  background-color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  outline: none;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.createButton:hover {
+  background-color: #c2e2f5;
+  color: #000080;
+}
+
+.tableTitle {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  color: #000080;
+}

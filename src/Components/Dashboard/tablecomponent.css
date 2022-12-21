@@ -1,0 +1,54 @@
+.tableplayground {
+  display: flex;
+}
+
+table {
+  /* box-shadow: 0 0 15px #c4c4c4; */
+  width: 100%;
+  border-radius: 5px;
+}
+
+thead {
+  font-size: large;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: var(--light-grey);
+}
+
+table thead {
+  background-color: var(--light-blue);
+
+  text-align: left;
+}
+
+th {
+  width: 10%;
+}
+
+th{
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+td {
+  border-bottom: 2px solid var(--very-light-grey);
+  text-align: left;
+  cursor: default;
+  font-size: 12px;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+table tbody td .edit {
+  color: green;
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+
+table tbody td .delete {
+  color: red;
+  font-size: 1rem;
+  margin: 0 1rem;
+}

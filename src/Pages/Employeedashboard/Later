@@ -1,0 +1,102 @@
+  <!-- ADD TASK  -->
+
+         <!-- RIGHT SECTION --> 
+    <div id="rightsection" className={edsh.subcontainer}> */}
+           <!-- ADD TASK--- --> 
+         <div id="addtask">
+            <div className={edsh.subcontainertopbar}>
+              <h4>Add Task</h4>
+              <i class="fa-solid fa-circle-plus"></i>
+            </div> 
+
+             <!-- CONTENT   -->
+            <div className={edsh.taskcontent}>
+              <div className={edsh.activitiescontent}>
+                <div class="inputs">
+            <div class="input-top">
+              <form id="taskform" action=""><input type="text" name="title" id="title">
+                <input type="text" id="task" >
+             
+                <button type="submit"><i id="subtask" class="fa-regular fa-circle-check"></i></button> 
+                </form> 
+           
+            </div>
+
+          </div> 
+                 <div className={edsh.activities}>
+                  <div>
+                    <h5>Make WireFrame &amp; Sketch</h5>
+                    <p> For Team Project. DeadLine: 3:00PM Wednesday</p>
+                  </div>
+                  <i className="fa-regular fa-trash-can" /> 
+                </div>
+
+                <div className={edsh.activities}>
+                  <div>
+                    <h5>UI Team meeting</h5>
+                    <p>
+                      Conclude the designs for the New Project Time: 11:00AM
+                    </p>
+                  </div>
+                  <i className="fa-regular fa-trash-can" />
+                </div>
+              </div>
+              <div className={edsh.activitiescontent}>
+                <div className={edsh.activities}>
+                  <div>
+                    <h5>Lunch Break</h5>
+                    <p>Time: 11:45AM</p>
+                  </div>
+                  <i class="fa-regular fa-trash-can"></i>
+                </div>
+
+                <div className={edsh.activities}>
+                  <div>
+                    <h5>Meeting with Clients </h5>
+                    <p>by 1:00PM</p>
+                  </div>
+                  <i class="fa-regular fa-trash-can"></i>
+                </div>
+              </div>
+              <div className={edsh.activitiescontent}>
+                <div classNames={edsh.activities}>
+                  <div>
+                    <h5>Closing Time</h5>
+                    <p>
+                      Brief meeting with team lead before leaving. by 4:00PM
+                    </p>
+                  </div>
+                  <i class="fa-regular fa-trash-can"></i>
+                </div>
+              </div>
+            </div> 
+          </div> 
+         </div>
+
+
+         <!-- FORMER NOTIFICATIONS  -->
+
+         <div className={edsh.activitiescontent}>
+          <div className={edsh.activities}>
+            <div>
+              <h5>Project Overview</h5>
+              <p>
+                Team Meeting has been scheduled for the review of projects
+                by the senior devs and Head of Department. Time:12:00(PM)
+                Prompt.
+              </p>
+            </div>
+          </div>
+          <div className={edsh.activities}>
+            <div id="newnots">
+              <h5>
+                Games Night
+                {/* <i id="notsicon" className="fa-solid fa-circle nots-icons" /> */}
+              </h5>
+              <p>
+                Games night will hold on Friday. Time: 8:00(PM) Prompt.
+                Anticipate.
+              </p>
+            </div>
+          </div>
+        </div>

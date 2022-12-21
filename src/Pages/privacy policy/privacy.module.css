@@ -1,0 +1,190 @@
+/*==================== VARIABLES CSS ====================*/
+:root {
+ /*========== Font and typography ==========*/
+ --body-font: "Poppins", sans-serif;
+
+ /* .5rem = 8px, 1rem = 16px, 1.25rem = 20px, 1.5rem = 24px... */
+ --big-font-size: 1.25rem;
+ /* --h1-font-size: 3rem; */
+ --h2-font-size: 1.25rem;
+ --h3-mobile: 0.9375rem;
+ --normal-font-size: 1rem;
+ --heading-mobile: 2rem;
+ --text-mobile: 0.875rem;
+
+  /*========== Font weight ==========*/
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== Logo Size ==========*/
+  --logo-width: 6.881rem;
+  --logo-height: 3.34rem;
+  --form-logo-width: 7.2rem;
+  --form-logo-height: 5rem;
+  
+  --footer-logo-width: 4rem;
+  --footer-logo-height: 5rem;
+  
+
+   /*========== Header Padding ==========*/
+   --header-pt: 0.75rem;
+   --header-pb: 0.75rem;
+
+
+  /*========== Colors ==========*/
+  /* Change favorite color */
+  --primary-hue-color: 240;
+  --secondary-hue-color: 0;
+  /* HSL Color Mode */
+  --text-color-white: hsl(var(--secondary-hue-color), 0%, 100%);
+  --text-color-purple: hsl(var(--primary-hue-color), 100%, 25%);
+  --text-color-black: #000000;
+  --body-first-color: hsl(var(--secondary-hue-color), 0%, 100%);
+  --body-second-color: hsl(var(--primary-hue-color), 100%, 25%);
+}
+
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+body {
+   font-family: var(--body-font);
+   
+}
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*==================== HEADING ====================*/
+.heading {
+    width: 80%;
+    margin-top: 9rem ;
+    font-size: 3rem;
+}
+
+
+/*==================== SECTIONS ====================*/
+
+.section {
+    margin: 3rem auto;
+    width: 80%;
+}
+h1, h4 {
+    color: #000080;
+}
+
+.policyTitle {
+    font-size: 20px;
+    color: #000080;
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+}
+
+.policyText {
+        line-height: 1.3;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 1rem;
+}
+
+
+.rightsIntro {
+    margin: .8rem 0;
+}
+
+.rightsListWrapper {
+   list-style-type: decimal;
+}
+
+.listItem {
+    line-height: 1.5;
+    margin-left: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.9rem;
+    list-style-type: square;
+}
+
+.rightsEnding {
+    margin-top: .8rem;
+}
+
+.contactSection {
+    margin-bottom: 7rem;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+/* For Tablets (min-width: 750px) and  */
+@media  (max-width: 1024px) {
+    .logo-wrapper .mobile-nav-toggle {
+        display: block;
+        /* background: url("../../Assets/icons/home-menu.svg"); */
+        padding: .6rem;
+        position: absolute;
+        width: 1.4rem;
+        aspect-ratio: 1;
+        right: 2.5rem;
+        top: 2rem;
+        z-index: 9999;
+        border: none;
+    }
+     .mobile-nav-toggle[aria-expanded="true"] {
+        /* background-image: url("../../Assets/icons/close-svg.svg"); */
+        background-repeat: no-repeat;
+      }
+      .nav-aside .navigation-desktop {
+        display: none;
+      }
+      .nav-aside .navigation-mobile {
+        display: block;
+        flex-direction: column;
+        position: fixed;  
+        list-style: none;
+        width: 100%;
+        top: 4.6rem;
+        left: -100%;
+        padding: min(2vh, 6rem) 0;
+        font-size: 1.1rem;
+        background-color: hsl(0, 0%, 100%);
+        height: 100vh;
+        transition: transform 350ms ease-in;
+        font-weight: var(--font-semi-bold);
+      }
+      .nav-aside .navigation[data-visible="true"] {
+        transform: translateX(100%);
+      }
+      .sign-in-link, .sign-up-link {
+        margin: 1rem 0;
+      }
+      .navigation-mobile li {
+        padding: 1.2rem 0;
+        color: #000080;
+        border-bottom: 1px solid #00000033;
+      }
+      .navigation-mobile .sign-up {
+        color: white;
+      }
+    }
+
+    @media(max-width:670px) {
+        .heading {
+            font-size: var(--heading-mobile);
+        }
+        .heading, .section {
+            width: 90%;
+        }
+        h3 {
+            font-size: var(--h3-mobile) ;
+        }
+        p, .rights__list-wrapper {
+            font-size: var(--text-mobile);
+        }
+    }
+

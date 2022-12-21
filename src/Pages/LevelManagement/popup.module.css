@@ -1,0 +1,258 @@
+:root {
+  --borderR: 2px solid red;
+  --borderG: 2px solid green;
+
+  --primary-blue: #000080;
+  --primary-pink: #fe8fa2;
+  --primary-green: #138808;
+  --primary-red: #d40000;
+  --primary-orange: #f49f0a;
+
+  --secondary-blue: #008df9;
+
+  --light-grey: #c4c4c4;
+  --light-blue: #c2e2f5;
+
+  --very-light-grey: #e3e3e3;
+
+  /* --white: #ffffff; */
+  --black: #000000;
+  --red: #ff0000;
+  --green: #2bd71c;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1212120f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.popup {
+  position: absolute;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+
+.close {
+  float: right;
+  margin: 0 20px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+/* UTILITY CLASSES */
+.columnSpanFull {
+  grid-column: 1 / -1;
+}
+
+.roleStyling {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  border-radius: 5px;
+  padding: 15px 0px;
+}
+
+.roleStyling:hover {
+  background-color: var(--very-light-grey);
+}
+
+/* FORM STYLING */
+fieldset {
+  border: none;
+}
+
+select {
+  width: 25%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.popupForm {
+  padding: 14px;
+  /* form layout styling */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 20px;
+  /* box-shadow: 0 0 15px #c4c4c480; */
+  border-radius: 5px;
+}
+
+.popupTitle {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.popupForm input,
+.popupForm textarea {
+  border: 1px solid var(--light-grey);
+  border-radius: 3px;
+  padding: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid #f1f3f5;
+  background-color: #f1f3f5;
+  color: var(--primary-blue);
+}
+
+.popupForm input {
+  width: 100%;
+  height: 2.5rem;
+  font-family: inherit;
+  /* cursor: pointer; */
+}
+
+.popupForm textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  font-family: inherit;
+}
+
+.popupForm textarea:focus {
+  outline: none;
+}
+
+.inputTitle {
+  margin-bottom: 0.5rem;
+  color: #000080;
+  font-weight: 600;
+}
+
+
+
+.popupContainerTwo h4,
+.popupContainerTwo h5 {
+  color: var(--primary-blue);
+}
+
+.popupContainer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 2vh;
+  left: 0;
+}
+
+
+
+.popupContainerTwo {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.popupContent {
+  width: 45vw;
+  padding: 2rem;
+  margin-top: 9%;
+  margin-left: 26%;
+  margin-right: 6%;
+  height: 72vh;
+  background-color: var(--white);
+  z-index: 3;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  /* transition: 1s ease 5s all; */
+}
+
+
+
+.submitButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  border: 2px solid var(--primary-blue);
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0px 25px;
+}
+
+.secondaryBtn {
+  color: var(--primary-blue);
+}
+
+.primaryBtn {
+  color: white;
+  background: var(--primary-blue);
+}
+
+.secondaryBtn:hover {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.primaryBtn:hover {
+  background-color: #c2e2f5;
+  color: var(--primary-blue);
+}
+
+.inactive {
+  opacity: 40%;
+}
+
+.edit {
+  width: 40%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid yellow;
+  z-index: 10;
+}
+
+.editclose {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+/* media query for semi-large phone screens */
+@media screen and (max-width: 884px) {
+  .popupContent {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popupContent {
+    width: 90vw;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.flex {
+  display: flex !important;
+}
+
+.myBlur {
+  filter: blur(3px);
+  transition: 1s linear;
+}
+
+/* @media screen and (max-width: 768px){
+    button h3 {
+        font-size: smaller;
+    }
+} */
+/* Alternate Button Container Styling */

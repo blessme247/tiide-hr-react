@@ -1,0 +1,113 @@
+.mainContent {
+    width: 100%;
+    border: 1px solid #000080;
+    border-radius: .5rem;
+    padding: 1rem;
+    /* margin: 2rem ; */
+    height: fit-content;
+  }
+
+.pendingLeavesWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pendingLeaveCard {
+    width: 35%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #c4c4c4;
+    background-color: white;
+    padding: 1.5rem 1.2rem;
+}
+
+.pendingLeaveHeader {
+    display: flex;
+    /* border-left: 2px solid #00afef; */
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000080;
+}
+
+.timeIcon {
+    /* margin-top: 0.4rem; */
+    transform: translateY(3%);
+}
+
+.userName {
+    font-weight: 600;
+}
+.userInfo, .startDate, .endDate, .middle, .leaveBrief {
+    display: flex;
+    flex-direction: column;
+}
+
+.leaveDuration {
+    display: flex;
+    justify-content: space-between;
+   
+    /* border-bottom: 2px solid #000080; */
+}
+
+.leaveBrief {
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000080;
+}
+
+.preArrows {
+    color: #000080;
+}
+
+.arrowIcon {
+    margin-top: 0.4rem;
+}
+
+.description {
+    margin: 2rem 0;
+}
+
+.month, .date {
+    font-weight: 600;
+}
+.label {
+    background-color: #00afef;
+    border-radius: 20px;
+    padding: 7px 9px;
+    color: white;
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.actionBtns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.approveBtn {
+    color: white;
+    background-color: #000080;
+    border-radius: 5px;
+    padding: 8px 9px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer !important;
+}
+
+.declineBtn {
+    background-color: white;
+    color: #000080;
+    border-radius: 5px;
+    border: 2px solid #000080;
+    padding: 8px 9px;
+    font-size: 1rem;
+    cursor: pointer !important;
+}
+
+.updateText {
+    text-align: center;
+    font-size: 14px;
+}
+
