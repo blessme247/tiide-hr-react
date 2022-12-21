@@ -93,8 +93,8 @@ function Popup({ closeModal }) {
           <>
             <h4 className={anrCss.popupTitle}>Create Role</h4>
             <Form className={anrCss.rolespopform}>
-              <pre>{JSON.stringify(errors, 2, null)}</pre>
-              <pre>{JSON.stringify(values, 2, null)}</pre>
+              {/* <pre>{JSON.stringify(errors, 2, null)}</pre>
+              <pre>{JSON.stringify(values, 2, null)}</pre> */}
               <div className={anrCss.formgroup}>
                 <label htmlFor='title' className={anrCss.inputTitle}>Title</label>
                 <input name='title' type="text" value={values.title} onChange={handleChange} />
