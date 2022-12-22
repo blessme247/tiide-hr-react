@@ -11,18 +11,26 @@ import { Formik } from "formik";
 import axios from "axios";
 import { toast } from "react-toastify";
 import axiosInstance from "../../_Helper/_Redux/AxiosConfig/axiosConfig";
+import levelServices from "../../_Helper/_Redux/redux/LevelManagement/LevelMgt.services";
+import { useDispatch } from "react-redux";
+import roleMgtServices from "../../_Helper/_Redux/redux/RoleManagement/roleManagement.services";
+import { loadLevels } from "../../_Helper/_Redux/redux/LevelManagement/LevelMgt.action";
+import { loadRoles } from "../../_Helper/_Redux/redux/RoleManagement/roleManagement.action";
 
 function BusinessRegistrationForm() {
     const navigate = useNavigate();
     const [token, setToken] = useState(false);
-    const localToken = JSON.parse(localStorage.getItem("token"));
+    const localToken = JSON.parse(localStorage.getItem("token")) || [];
     let tokenExists = localToken?.length > 0;
+
     useEffect(() => {
         console.log("Token exists")
         if (tokenExists) {
         setToken(true);
         }
     }, [tokenExists]);
+
+    const dispatch = useDispatch();
     return (
   <>
     <Formik
@@ -58,8 +66,13 @@ function BusinessRegistrationForm() {
             
             // if(token){
             
-            
-                navigate("/employeemanagement");
+            levelServices.getAllLevels().then((levels) => {
+              dispatch(loadLevels(levels))
+            })
+            roleMgtServices.fetchAllRoles().then((res) => {
+              dispatch(loadRoles(res))
+              navigate("/employeemanagement");
+            })
               
             
             return response;
