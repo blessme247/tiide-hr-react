@@ -44,7 +44,7 @@ function SideNavLinks({ openNav }) {
     }
     // if role access return the leave access element
     if (role.value === "manageLeave") {
-      return <SideNavBtn openNav={openNav} title="Leave" iconName={<FaBed />} link="/leaveapplication" />
+      return <SideNavBtn openNav={openNav} title="Leave" iconName={<FaBed />} link="/leavemanagement" />
     }
     // if role access return the level access element
     if (role.value === "manageLevel") {
