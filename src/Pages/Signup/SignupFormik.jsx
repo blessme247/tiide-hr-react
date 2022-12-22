@@ -21,6 +21,9 @@ function SignupFormik(props) {
   const [passwordShown, setPasswordShown] = useState(false);
   const [confirmPasswordShown, setConfirmPasswordShown] = useState(false);
 
+  // Redirect state
+  const [redirect, setRedirect] = useState(false)
+
 
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
@@ -94,6 +97,7 @@ function SignupFormik(props) {
               localStorage.setItem("currentUser", JSON.stringify(userDetails) )
               
               if(token){
+                setRedirect(true)
                 showBusinessProfileForm();
                 return response;
               }
