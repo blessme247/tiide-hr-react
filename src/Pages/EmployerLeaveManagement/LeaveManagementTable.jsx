@@ -94,9 +94,9 @@ const LeaveManagementTable = (props) => {
           <React.Fragment>
             {/* {isLoading && <ThreeDots />} */}
 
-            {!isLoading && leaves.length < 1 && (
+            {/* {!isLoading && leaves.length < 1 && (
               <p style={{ textAlign: "center" }}>No leave policies</p>
-            )}
+            )} */}
 
             {/* Leaves will be undefined on render, hence we check for when the length is > 0 before we map */}
             {leaves.length > 0
@@ -122,7 +122,7 @@ const LeaveManagementTable = (props) => {
                     </>
                   );
                 })
-              : null}
+              : <p>No leave policies</p>}
           </React.Fragment>
         </tbody>
       </table>
