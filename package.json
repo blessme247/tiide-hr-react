@@ -1,6 +1,7 @@
 {
   "name": "tiide-hr-react-fe",
   "version": "0.1.0",
+  "homepage": "https://tiide-hr.netlify.app",
   "private": true,
   "dependencies": {
     "@chakra-ui/popover": "^2.1.4",
