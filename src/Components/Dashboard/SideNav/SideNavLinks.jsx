@@ -90,7 +90,7 @@ function SideNavLinks({ openNav }) {
       {checkNavAccess[2] ? checkNavAccess[2] : ""}
       {checkNavAccess[3] ? checkNavAccess[3] : ""}
       <SideNavBtn openNav={openNav} title="Notification" iconName={<FaBell />} link="/notifications" />
-      <SideNavBtn openNav={openNav} title="Signout" iconName={<FaSignOutAlt />} func={handleLogout} />
+      <SideNavBtn openNav={openNav} title="Signout" iconName={<FaSignOutAlt />} link="/" func={handleLogout} />
     </>
   );
 };
