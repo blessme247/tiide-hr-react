@@ -109,6 +109,7 @@ main {
     margin: .5rem auto;
     font-size: .9rem;
     font-weight: var(--font-semi-bold);
+    cursor: pointer;
 }
 
 .formWrapperSignin .formLeft {
