@@ -30,7 +30,7 @@ function BusinessRegistrationForm() {
     }, [tokenExists]);
 
     const dispatch = useDispatch();
-    
+
     return (
   <>
     <Formik
@@ -73,7 +73,7 @@ function BusinessRegistrationForm() {
             //   dispatch(loadRoles(res))
             userServices.getCurrentUser().then((res)=>{
               dispatch(loadCurrentUser(res))
-              navigate("/employeemanagement");
+              navigate("/dashboard");
             })
             // })
               
