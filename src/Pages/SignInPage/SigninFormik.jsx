@@ -25,6 +25,8 @@ function SigninFormik() {
   const [passwordShown, setPasswordShown] = useState(false);
   const dispatch = useDispatch();
 
+  const [redirect, setRedirect] = useState(false)
+
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
   };
@@ -93,6 +95,7 @@ function SigninFormik() {
             localStorage.setItem("currentUser", JSON.stringify(userDetails))
 
             if (token) {
+              setRedirect(true)
               levelServices.getAllLevels().then((levels) => {
                 dispatch(loadLevels(levels))
               })
